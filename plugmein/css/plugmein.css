@@ -1,0 +1,4 @@
+ul.plugmein {list-style-type: none;font-weight: bold;}
+hr.plugmein{clear:none;}
+li.disabled {color:gray; text-decoration:line-through;}
+span {color: lightgray;}

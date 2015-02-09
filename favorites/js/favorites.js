@@ -1,0 +1,1 @@
+$(function(){$(document).on("click",".favorite",function(){var s=$(this).find(".icon16");$.post("?plugin=favorites&action=state",{favorite:s.hasClass("star-empty")?1:0,id:$(".request-id").text()},"json"),s.hasClass("star-empty")?(s.removeClass("star-empty"),s.addClass("star")):(s.removeClass("star"),s.addClass("star-empty"))})});

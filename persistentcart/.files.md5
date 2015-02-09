@@ -1,0 +1,10 @@
+cc2566ae4698255b36baee5b7378ec03 *img/persistentcart.png
+a1751e1f10a3b96b05d0401c97e72008 *lib/.htaccess
+cb55e756542f8a005167e81aa775b707 *lib/config/plugin.php
+3b26888b7c80e5ecb533428b41085b26 *lib/config/requirements.php
+9ed50b620b1d4a5da74445f354f28e18 *lib/config/settings.php
+3782699705a2c4fb81e6c71972b62100 *lib/shopPersistentcartPlugin.class.php
+a1751e1f10a3b96b05d0401c97e72008 *locale/.htaccess
+c1b068a7b4a9ef3d21f34c662e3c7134 *locale/en_US/LC_MESSAGES/shop_persistentcart.po
+cf45c9380764fcd0382146c3f2f6ce63 *locale/ru_RU/LC_MESSAGES/shop_persistentcart.mo
+bad6a9db52a05790c71943484c08e486 *locale/ru_RU/LC_MESSAGES/shop_persistentcart.po

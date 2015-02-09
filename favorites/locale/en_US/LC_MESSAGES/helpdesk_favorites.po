@@ -1,0 +1,23 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: helpdesk/plugins/favorites\n"
+"POT-Creation-Date: 2014-11-07 16:22+0300\n"
+"PO-Revision-Date: \n"
+"Last-Translator:  helpdesk/plugins/favorites\n"
+"Language-Team:  helpdesk/plugins/favorites\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: en_US\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: .\n"
+
+#: /wa-apps/helpdesk/plugins/favorites/lib/helpdeskFavoritesPlugin.class.php:14
+msgid "Favorites"
+msgstr ""
+
+#: /wa-apps/helpdesk/plugins/favorites/lib/config/plugin.php:5
+msgid "Add requests to Favorites"
+msgstr ""

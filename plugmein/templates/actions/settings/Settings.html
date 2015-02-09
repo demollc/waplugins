@@ -1,0 +1,63 @@
+<link href="{$plugin_path}/css/plugmein.css" rel="stylesheet" type="text/css">
+<script src="{$wa_url}wa-content/js/jquery/jquery-1.9.1.min.js"></script>
+{literal}
+<script type="text/javascript">
+	function plugmein_sendform(state){
+					var $form = $('#plugmein-form'),
+					url = $form.attr( "action" ),
+					csrf = $('[name=_csrf]').attr("value");
+					searchIDs = $('#plugmein-form input[type="checkbox"]:checked').map(function(){return this.id;});
+						var posting = $.post( url, {_csrf:csrf,state:state,plugins:searchIDs.get()});
+						posting.done(function( data ) {
+			                            if (data!='OK') $('#plugmein-error').empty().append( data );
+							else location.reload(true);
+					});
+	};
+
+	$('#plugmein-enable').click(function(id){
+		plugmein_sendform(1);
+	});
+	$('#plugmein-disable').click(function(id){
+		plugmein_sendform(0);
+	});
+
+	$('#plugmein-checkAll').click(function(){$('#plugmein-form input[type="checkbox"]').prop('checked', true);});
+	$('#plugmein-uncheckAll').click(function(){$('#plugmein-form input[type="checkbox"]').prop('checked', false);});
+	$('#s-plugmein-form').click(function(){
+	if ($("#plugmein-form input:checkbox:checked").length > 0)
+		{
+			$('#plugmein-enable').prop( "disabled", false );
+			$('#plugmein-disable').prop( "disabled", false );
+			$('#plugmein-uncheckAll').prop( "disabled", false );
+		}
+		else
+		{
+			$('#plugmein-disable').prop( "disabled", true );
+			$('#plugmein-enable').prop( "disabled", true );
+			$('#plugmein-uncheckAll').prop( "disabled", true );			
+		}
+	});
+	</script>
+{/literal}
+<div id="s-plugmein-form" class="plugmein">
+     <h2>{_wp('Plugin Manager')}</h2>
+	<span id="plugmein-error"></span>
+	<button class="button" id="plugmein-checkAll">☑</button> | 
+	<button class="button" id="plugmein-uncheckAll" disabled>☐</button>
+	<hr class="plugmein">
+	{if empty($plugin_list)} 
+		<h3>{_wp('No plugins available.')}</h3>
+	{else}
+		 <form id="plugmein-form" method="POST" action="?plugin=plugmein&action=run">
+		{$wa->csrf()}
+		 <ul class="zebra plugmein">
+			 {foreach $plugin_list as $plugin}
+					  <li class="{if !$plugin.active}disabled{/if}"><input type="checkbox" id="{$plugin.id}" value="1">&nbsp;{$plugin.name}&nbsp;<span>{$plugin.description}</span></li>
+			 {/foreach}
+		 </ul>
+		 </form>
+     {/if}
+     <hr class="plugmein">
+	<button class="button green" id="plugmein-enable" disabled>{_wp('Enable')}</button> | 
+	<button class="button red" id="plugmein-disable" disabled>{_wp('Disable')}</button>
+</div>

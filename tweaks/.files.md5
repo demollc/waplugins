@@ -1,0 +1,15 @@
+0ed38db8e5c4f2e0722b5aab3cbac93d *css/tweaks.css
+bb9022de835950b3d55e3ecd17d82e07 *img/tweaks.png
+4f7c873d0d135ba059bfdfa28d6984ae *js/image.projection.js
+de8c52b15ac7314c99a70ee832c79391 *js/tweaks.js
+a1751e1f10a3b96b05d0401c97e72008 *lib/.htaccess
+26830b62d96bbc3991a3a78538f2a9e9 *lib/config/plugin.php
+d531d17a1386a556a99e53e08c9a7747 *lib/config/settings.php
+16a5b35177267d73542792dd1f7d2a62 *lib/shopTweaksPlugin.class.php
+a1751e1f10a3b96b05d0401c97e72008 *locale/.htaccess
+169f3121494ab98c4bc6bd1f893b882b *locale/en_US/LC_MESSAGES/shop_tweaks.po
+538693d40b52aa0aaf9283e6fbcc2477 *locale/ru_RU/LC_MESSAGES/shop_tweaks.mo
+ec4515620d5ea323baaa4d8a1c5b3268 *locale/ru_RU/LC_MESSAGES/shop_tweaks.po
+a1751e1f10a3b96b05d0401c97e72008 *templates/.htaccess
+889b61fad96d65e2acce4202acce9ce5 *templates/BackendImages.html
+13edff8eefc8cf300e3a56aa9f20eae5 *templates/include.imageUpload.html

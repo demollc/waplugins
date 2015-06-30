@@ -1,0 +1,63 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: shop/plugins/tweaks\n"
+"POT-Creation-Date: 2015-06-28 13:23-0500\n"
+"PO-Revision-Date: \n"
+"Last-Translator:  shop/plugins/tweaks\n"
+"Language-Team:  shop/plugins/tweaks\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=((((n%10)==1)&&((n%100)!=11))?(0):(((((n%10)>=2)&&((n%10)<=4))&&(((n%100)<10)||((n%100)>=20)))?(1):2));\n"
+"X-Poedit-Language: ru_RU\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: .\n"
+
+#: /wa-apps/shop/plugins/tweaks/templates/include.imageUpload.html:18
+msgid "Stop upload"
+msgstr "Прервать"
+
+#: /wa-apps/shop/templates/actions/product/include.imageUpload.html:47
+msgid "Files uploaded with errors"
+msgstr "Файлы, загруженные с ошибками"
+
+#: /wa-apps/shop/templates/actions/product/include.imageUpload.html:47
+msgid "Failed to upload. Most probably, there were not enough memory to create thumbnails."
+msgstr "Не удалось загрузить. Вероятно, недостаточно памяти для создания эскизов изображений."
+
+#: /wa-apps/shop/plugins/tweaks/templates/BackendImages.html:25
+msgid "add description"
+msgstr ""
+
+#: /wa-apps/shop/plugins/tweaks/templates/BackendImages.html:29
+msgid "Select images"
+msgstr "Выберите изображения"
+
+#: /wa-apps/shop/plugins/tweaks/templates/BackendImages.html:30
+msgid "or drag them here to start upload"
+msgstr "или перетащите их сюда, чтобы начать загрузку"
+
+#: /wa-apps/shop/plugins/tweaks/templates/BackendImages.html:30
+msgid "Sales plot"
+msgstr "График продаж"
+
+#: /wa-apps/shop/plugins/tweaks/lib/config/settings.php:5
+msgid "Plugin enabled"
+msgstr "Плагин включен"
+
+#: /wa-apps/shop/plugins/tweaks/lib/config/settings.php:10
+msgid "Thumbs on main product page(only for Shop-Script 6)"
+msgstr "Эскизы на главной странице товара(только для Shop-script 6)"
+
+#: /wa-apps/shop/plugins/tweaks/lib/config/settings.php:15
+msgid "Thumbs on hover items in order"
+msgstr "Эскизы при наведении в заказе"
+
+msgid "Tweaks"
+msgstr "Тонкая настройка"
+
+msgid "Handy tweaks"
+msgstr "Тонкая настройка и дополнительные скрипты"
+

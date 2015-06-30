@@ -1,0 +1,58 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: shop/plugins/tweaks\n"
+"POT-Creation-Date: 2015-06-28 13:23-0500\n"
+"PO-Revision-Date: \n"
+"Last-Translator:  shop/plugins/tweaks\n"
+"Language-Team:  shop/plugins/tweaks\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: en_US\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: .\n"
+
+#: /wa-apps/shop/plugins/tweaks/templates/include.imageUpload.html:18
+msgid "Stop upload"
+msgstr ""
+
+#: /wa-apps/shop/plugins/tweaks/templates/include.imageUpload.html:28
+msgid "Files uploaded with errors"
+msgstr ""
+
+#: /wa-apps/shop/plugins/tweaks/templates/include.imageUpload.html:66
+msgid "Failed to upload. Most probably, there were not enough memory to create thumbnails."
+msgstr ""
+
+#: /wa-apps/shop/plugins/tweaks/templates/BackendImages.html:25
+#: /wa-apps/shop/plugins/tweaks/templates/ProductImages.html:1
+msgid "add description"
+msgstr ""
+
+#: /wa-apps/shop/plugins/tweaks/templates/BackendImages.html:29
+#: /wa-apps/shop/plugins/tweaks/templates/ProductImages.html:6
+msgid "Select images"
+msgstr ""
+
+#: /wa-apps/shop/plugins/tweaks/templates/BackendImages.html:30
+#: /wa-apps/shop/plugins/tweaks/templates/ProductImages.html:7
+msgid "or drag them here to start upload"
+msgstr ""
+
+#: /wa-apps/shop/plugins/tweaks/templates/BackendImages.html:8
+msgid "Sales plot"
+msgstr ""
+
+#: /wa-apps/shop/plugins/tweaks/lib/config/settings.php:5
+msgid "Plugin enabled"
+msgstr ""
+
+#: /wa-apps/shop/plugins/tweaks/lib/config/settings.php:10
+msgid "Thumbs on main product page(only for Shop-Script 6)"
+msgstr ""
+
+#: /wa-apps/shop/plugins/tweaks/lib/config/settings.php:15
+msgid "Thumbs on hover items in order"
+msgstr ""

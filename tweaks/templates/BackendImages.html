@@ -1,0 +1,39 @@
+<link type="text/css" rel="stylesheet" href="{$path}css/tweaks.css">
+<div class="block" id="s-plugin-tweaks">
+    <ul class="tabs">
+        <li class="selected" data-tab="images">
+            <a href="#" id="s-tweaks-images">{_w('Images')}</a>
+        </li>
+        <li data-tab="sales-plot">
+            <a href="#" id="s-tweaks-products-plot">{_wp('Sales plot')}</a>
+        </li>
+    </ul>
+    <div class="tab-content" id="s-tweaks-tab-content">
+        <div id="s-tweaks-image-wrapper" class="block s-tab-block" data-tab="images">
+            
+              <ul class="s-tweaks-product-image-crops">
+              {if $images}
+                  {foreach $images as $image}
+                    <li data-image-id="{$image.id}">
+                        <a href="#/product/{$image.product_id}/edit/images/{$image.id}/">
+                            <img src="{$image.url_crop}" alt="">
+                        </a>
+                    </li>
+                {/foreach}
+              {/if}
+            </ul>
+            {$placeholder = '[`add description`]'}
+            <form id="fileupload" action="?module=product&amp;action=imageUpload" method="POST" enctype="multipart/form-data">
+            <div class="block double-padded s-image-upload-dropbox">
+                <a href="javascript:void(0);" id="s-upload-images-link" class="fileinput-button">
+                    <i class="icon16 upload"></i>[`Select images`]<input type="file" name="files[]" multiple=""></a>
+                <span class="gray">[`or drag them here to start upload`]</span>
+            </div>
+            <input type="hidden" name="product_id" value="{$product_id}">
+            {$wa->csrf()}
+            {include './include.imageUpload.html' inline}
+            </form>
+        </div>
+    </div>
+</div>
+<script src="{$path}js/tweaks.js"/>

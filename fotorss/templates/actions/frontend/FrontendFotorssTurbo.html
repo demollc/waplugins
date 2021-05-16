@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:yandex="http://news.yandex.ru" xmlns:media="http://search.yahoo.com/mrss/"
+     xmlns:turbo="http://turbo.yandex.ru" version="2.0">
+    <channel>
+        <title>{$info.title|escape}</title>
+        <link>{$info.link|escape}</link>
+        <language>{$info.language|escape}</language>
+        <pubDate>{$info.pubDate|escape}</pubDate>
+        <lastBuildDate>{$info.lastBuildDate|escape}</lastBuildDate>
+        {foreach $posts as $row}
+            <item turbo="true">
+                <turbo:extendedHtml>true</turbo:extendedHtml>
+                <link>{$info.link|escape}{$info.photourl}{$row.url}/</link>
+                <turbo:topic>{$row.name|escape}</turbo:topic>
+                <pubDate>{$row.upload_datetime|wa_datetime:DATE_RSS}</pubDate>
+                {if !empty($row.author)}
+                    <author>{$row.author|escape}</author>
+                {/if}
+                <turbo:content><![CDATA[
+                    <header>
+                        <h1>{$row.name|escape}</h1>
+                        {if !empty($row.author)}<b>{$row.author|escape}</b>{/if}<br>
+                        <figure>
+                            <img alt="{$row.name|escape}" src="{$row.thumb.url}"
+                                    {if $row.thumb.url2x|default:false} srcset="{$row.thumb.url2x} 2x"{/if}>
+                        </figure>
+                    </header>
+                    <p><a href="{$info.link|escape}{$info.photourl}{$row.url}">{$row.name|escape}</a></p>
+                    ]]>
+                </turbo:content>
+            </item>
+        {/foreach}
+    </channel>
+</rss>
